@@ -40,6 +40,10 @@ public class Task {
     }
 
     public String toString() {
-        return String.format("ID: %s | main.Task: %s | Priority: %s | Deadline: %s | Completed: %s", id, name, priority, deadline, isCompleted? "Yes" : "No");
+        return String.format("ID: %s | Task: %s | Priority: %s | Deadline: %s | Completed: %s", id, name, priority, deadline, isCompleted? "Yes" : "No");
+    }
+
+    public static void resetCounter() {
+        idCounter = 1;
     }
 }

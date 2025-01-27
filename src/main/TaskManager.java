@@ -107,6 +107,7 @@ public class TaskManager {
             System.out.println("No tasks to clear.");
         } else {
             tasks.clear();
+            Task.resetCounter();
             saveTasks();
             System.out.println("All tasks have been cleared.");
         }
